@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+    <style>
+        /* Estilos personalizados para o menu */
+        .custom-menu {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .custom-menu button {
+            margin: 10px;
+        }
+
+        /* Estilos responsivos para o menu */
+        @media (max-width: 768px) {
+            .custom-menu {
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="custom-menu">
+                    <button class="btn btn-primary" id="comanda-button">Comanda</button>
+                    <button class="btn btn-primary" id="cadastro-button">Cadastro</button>
+                    <button class="btn btn-primary" id="relatorio-button">Relatório</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Eventos de clique para cada botão do menu
+        $(document).ready(function() {
+            $('#comanda-button').click(function() {
+                alert('Você clicou em Comanda.');
+                // Adicione aqui a lógica para navegar para a página de Comanda ou realizar outras ações desejadas.
+            });
+
+            $('#cadastro-button').click(function() {
+                alert('Você clicou em Cadastro.');
+                // Adicione aqui a lógica para navegar para a página de Cadastro ou realizar outras ações desejadas.
+            });
+
+            $('#relatorio-button').click(function() {
+                alert('Você clicou em Relatório.');
+                // Adicione aqui a lógica para navegar para a página de Relatório ou realizar outras ações desejadas.
+            });
+        });
+    </script>
+</body>
+</html>
